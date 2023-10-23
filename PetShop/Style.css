@@ -11,13 +11,19 @@ nav {
 .div-1{
   width: 100%;
   display: inline-flex;
+  display: flex;
+  justify-content: space-between;
 }
 
 .div-logo{
   margin-left: 150px;
 }
 .div-text{
+  margin-left: 25vh;
+  margin-right: 25vh;
   display: inline-flex;
+  margin-top: 1.5vh;
+  
 }
 
 nav.top-bar-wrap {
@@ -54,48 +60,121 @@ a.nav-link:hover {
   border-left: 12px solid rgba(232, 231, 230);
 }
 
+a.nav-link1:hover {
+  background: white;
+
+  border-left: 12px solid rgba(232, 231, 230);
+}
+
 a.nav-link {
-  border-left: 12px solid transparent;
-  border-right: 12px solid transparent;
+  border-left: 1px solid transparent;
+  border-right: 10px solid transparent;
   color: black;
   font-family: 'Lilita One';
   transform: skew(-25deg);
   transition: all 400ms ease-out
 }
 
+
+
+
+
 a.nav-text {
-  border-left: 12px solid transparent;
-  border-right: 12px solid transparent;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
   color: black;
   font-family: 'Lilita One';
   text-decoration: none;
   margin-top: 4px;
 }
 
+
+
 a .inner-text{
   font-size: x-large;
 }
 
-a .link {
+
+
+a .link1 {
   display: inline-block;
   transform: skew(25deg);
   font-size: larger;
 }
 
-a:hover .link {
-  color: aqua;
+a .link2 {
+  display: inline-block;
+  transform: skew(25deg);
+  font-size: larger;
+}
+
+a .link3 {
+  display: inline-block;
+  transform: skew(25deg);
+  font-size: larger;
+}
+
+a .link4 {
+  display: inline-block;
+  transform: skew(25deg);
+  font-size: larger;
+}
+
+a .link5 {
+  display: inline-block;
+  transform: skew(25deg);
+  font-size: larger;
+}
+
+a .link6 {
+  display: inline-block;
+  transform: skew(25deg);
+  font-size: larger;
+}
+
+a:hover .link1 {
+  color: blue;
   display: inline-block;
   transform: skew(25deg);
 }
+
+a:hover .link2 {
+  color: red;
+  display: inline-block;
+  transform: skew(25deg);
+}
+
+a:hover .link3 {
+  color: palevioletred;
+  display: inline-block;
+  transform: skew(25deg);
+}
+
+a:hover .link4 {
+  color: orange;
+  display: inline-block;
+  transform: skew(25deg);
+}
+
+a:hover .link5 {
+  color: green;
+  display: inline-block;
+  transform: skew(25deg);
+}
+
+a:hover .link6 {
+  color: rgb(158, 158, 255);
+  display: inline-block;
+  transform: skew(25deg);
+}
+
 
 .nav-link {
   padding: 0px;
 }
 
 
-
 .top-bar-wrap a {
-  padding-left: 12px;
   margin-left: 10vh;
 }
 
@@ -124,21 +203,69 @@ a:hover .link {
 }
 
 .nav-link img {
-  height: 25px;
-  width: 25px;
+  height: 27px;
+  width: 27px;
   transform: skewX(25deg);
 }
 
+
+
+
 .logo {
   height: 9vh;
-  width: ;
 }
 
-.div-button button img{
-  height: 10px;
-  width: 10px;
-  background-color: aqua;
+.carrinho a img{
+  margin-top: 1vh;
+  height: 7vh;
+  background-color: rgb(236, 236, 236);
+  border-radius: 100vh;
 }
+
+.entrar a img{
+  margin-top: 1vh;
+  height: 7vh;
+  background-color: rgb(236, 236, 236);
+  border-radius: 100vh;
+}
+.buttons{
+  margin-left: vh;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+body{
+  background-color: #9d3636;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -161,4 +288,7 @@ a:hover .link {
   text-decoration: none;
   color: #fff;
   font-size: 25px;
+}
+footer{
+  margin-top: 100vh;
 }
