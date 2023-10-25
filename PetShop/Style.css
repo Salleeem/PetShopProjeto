@@ -13,6 +13,7 @@ nav {
   display: inline-flex;
   display: flex;
   justify-content: space-between;
+  margin-top: 2.3vh;
 }
 
 .div-logo{
@@ -22,7 +23,7 @@ nav {
   margin-left: 25vh;
   margin-right: 25vh;
   display: inline-flex;
-  margin-top: 1.5vh;
+  margin-top: 2vh;
   
 }
 
@@ -36,6 +37,7 @@ nav.top-bar-wrap {
 .top-bar-wrap {
   height: 40px;
   line-height: 40px;
+  margin-top: 0px;
 }
 
 .main-nav-wrap {
@@ -304,22 +306,23 @@ footer{
 
 
 
-
 .carrossel{
   width: 100%;
-  height: 50vh;
-  background-image: cross-fade();
-  background-image: url(img/FundoCarousel.png);
+  height: 75vh;
+  background-image: url(img/FundoCa2.png);
+  background-size:cover;
+  background-position-x:%;
+
 }
 
 #slider {
- 
   width: 63%;
   height: 21vw;
-  margin: 150px auto;
+  margin: 15px auto;
   perspective: 1400px;
   transform-style: preserve-3d;
   border-radius: 12px;  /* Rounded corners */
+  
 }
 
 /* Radio buttons for slide control */
@@ -336,11 +339,14 @@ input[type=radio] {
   cursor: pointer;
   transform: translateX(-83px);
   transition: background 300ms ease, border 300ms ease;  /* Smooth transition */
+  
+
 }
 
 input[type=radio]:checked {
   background: #FF5A5F;  /* Airbnb's coral red */
   border: 2px solid #FF5A5F;  /* Airbnb's coral red */
+  margin-top: 30px;
 }
 
 /* Labels and images */
@@ -352,6 +358,7 @@ input[type=radio]:checked {
   left: 0;
   top: 0;
   border-radius: 12px;  /* Rounded corners */
+  margin-top: 20px;
   transition: transform 400ms ease, opacity 400ms ease;  /* Added opacity transition */
 }
 
@@ -364,8 +371,9 @@ input[type=radio]:checked {
 #s3:checked ~ #slide3, 
 #s4:checked ~ #slide4, 
 #s5:checked ~ #slide5 {
-  box-shadow: 0 13px 26px rgba(0,0,0, 0.3), 0 12px 6px rgba(0,0,0, 0.2);
+  box-shadow: 0 29px 26px rgba(0,0,0, 0.3), 0 12px 6px rgba(0,0,0, 0.2);
   transform: translate3d(0%, 0, 0px);
+  
 }
 
 #s1:checked ~ #slide2, 
@@ -373,8 +381,9 @@ input[type=radio]:checked {
 #s3:checked ~ #slide4, 
 #s4:checked ~ #slide5, 
 #s5:checked ~ #slide1 {
-  box-shadow: 0 6px 10px rgba(0,0,0, 0.3), 0 2px 2px rgba(0,0,0, 0.2);
+  box-shadow: 0 26px 10px rgba(0,0,0, 0.3), 0 2px 2px rgba(0,0,0, 0.2);
   transform: translate3d(20%, 0, -100px);
+  
 }
 
 #s1:checked ~ #slide3,
@@ -382,8 +391,9 @@ input[type=radio]:checked {
 #s3:checked ~ #slide5,
 #s4:checked ~ #slide1,
 #s5:checked ~ #slide2 {
-  box-shadow: 0 1px 4px rgba(0,0,0, 0.4);
+  box-shadow: 0 21px 4px rgba(0,0,0, 0.4);
   transform: translate3d(40%, 0, -250px);
+  
 }
 
 #s1:checked ~ #slide4,
@@ -391,8 +401,9 @@ input[type=radio]:checked {
 #s3:checked ~ #slide1,
 #s4:checked ~ #slide2,
 #s5:checked ~ #slide3 {
-  box-shadow: 0 1px 4px rgba(0,0,0, 0.4);
+  box-shadow: 0 21px 4px rgba(0,0,0, 0.4);
   transform: translate3d(-40%, 0, -250px);
+  
 }
 
 #s1:checked ~ #slide5,
@@ -400,7 +411,8 @@ input[type=radio]:checked {
 #s3:checked ~ #slide2,
 #s4:checked ~ #slide3,
 #s5:checked ~ #slide4 {
-  box-shadow: 0 6px 10px rgba(0,0,0, 0.3), 0 2px 2px rgba(0,0,0, 0.2);
+  box-shadow: 0 26px 10px rgba(0,0,0, 0.3), 0 2px 2px rgba(0,0,0, 0.2);
   transform: translate3d(-20%, 0, -100px);
+ 
 }
 
