@@ -241,13 +241,30 @@ body{
 }
 
 
+.card .nome{
+  margin: 10px;
+  color: #919191;
+}
+.card .preco{
+  font-size: larger;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  color: #175EA8;
+}
 
+.cards{
+  height:60vh;
+  display: flex;
+  justify-content: space-around;
+}
 
+.card{
+  width: 20%;
+}
 
-
-
-
-
+.card img{
+  width: 100%;
+}
 
 
 
@@ -284,6 +301,7 @@ body{
   padding: 15px;
   border-radius: 40px;
   background: tomato;
+  
 }
 
 .link-area a {
@@ -293,6 +311,17 @@ body{
 }
 footer{
   margin-top: 100vh;
+  
+ 
+}
+
+.yupi{
+}
+
+footer i  {
+  padding-right: 12px;
+  
+
 }
 
 
@@ -311,7 +340,7 @@ footer{
   height: 75vh;
   background-image: url(img/FundoCa2.png);
   background-size:cover;
-  background-position-x:%;
+        
 
 }
 
