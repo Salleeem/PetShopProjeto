@@ -292,9 +292,6 @@ footer{
  
 }
 
-.yupi{
-}
-
 footer i  {
   padding-right: 12px;
   
@@ -439,18 +436,21 @@ img {
 }
 
 .card-list {
-	width: 90%;
-	max-width: 265px;
+  display: flex;
+  justify-content: space-between
 }
-
+#ultima{
+  margin-right: 40px;
+}
 .card {
 	background-color: #FFF;
 	box-shadow: 0 0 0 1px rgba(#000, .05), 0 20px 50px 0 rgba(#000, .1);
 	border-radius: 15px;
-
 	padding: 1.25rem;
-	
 	transition: .15s ease-in;
+  margin-left: 40px;
+  display: flex;
+  justify-content: space-around;
 	
 	&:hover, &:focus-within {
 		box-shadow: 0 0 0 2px #16C79A, 0 10px 60px 0 rgba(#000, .1);
@@ -556,10 +556,11 @@ img {
 .icones{
   display: flex;
 
+
 }
 
 .iconezinhos{
-  width: 80%;
+ width: 70%;
  display: flex;
  justify-content: space-between;
   
@@ -581,12 +582,13 @@ img {
 
 
 
+
 .large-font{
   font-size:xx-large;
   
 }
 .top-20{
-  margin-left: 60%;
+  margin-left: 45%;
  
 }
 ion-icon.active{
@@ -599,4 +601,38 @@ ion-icon{
   stroke:rgb(98, 80, 80);
   stroke-width:30;
   transition:all 0.5s;
+}
+
+.mais{
+  color: #FF5A5F;
+  margin-left: 10px;
+
+}
+
+
+
+
+.comprar-btn {
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 100%;
+  background-color: #4CE53E;
+  color: #fff;
+ 
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.comprar-btn:hover {
+  background-color: #34d625;
+  color: #ecf0f1;
+}
+
+.preco{
+  display: flex;
+  justify-content: space-between;
+}
+
+.bag-outline{
+  color: ;
 }
