@@ -16,6 +16,68 @@
 
 <body>
 
+
+  <div role="navigation">
+    <div class="brand-logo">
+      <a href="Index.html"><img src="img/LogoImg.png" /></a>
+    </div>
+    <div class="text-center">
+      <div class="div-1">
+        <div class="div-logo">
+          <img class="logo" src="img/LogoText.png" alt="">
+        </div>
+        <div class="div-text">
+          <ul class="top-bar">
+            <li class="nav-item">
+              <a href="Carrinho.html" class="nav-text"><span class="inner-text">Produtos</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-text"><span class="inner-text">Sobre</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-text"><span class="inner-text">Contato</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-text"><span class="inner-text">Ajuda</span></a>
+            </li>
+          </ul>
+        </div>
+        <div class="buttons">
+          <div class="entrar">
+            <a href="Cadastro.html" class="entrara"><img src="img/BotaoEntrar.png" alt="">
+          </div><a>
+        </div>
+        <div class="carrinho">
+          <a href="Carrinho.html" class="carrinho"><img src="img/Carrinho.png" alt=""></a>
+        </div>
+
+      </div>
+    </div>
+    <nav class="top-bar-wrap">
+      <ul class="top-bar">
+        <li class="nav-item">
+          <a href="#" class="nav-link"><img src="img/Cachorro.png" alt=""><span class="link1">‎Cachorro</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link"><img src="img/Gato.png" alt=""><span class="link2">‎Gato</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link"><img src="img/Passaro.png" alt=""><span class="link3">‎Passáro</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link"><img src="img/Peixe.png" alt=""><span class="link6">‎‎Peixes</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link"><img src="img/Tartaruga.png" alt=""><span class="link4">‎Outros Pets</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="Serviços/Serviços.html" class="nav-link"><img src="img/Folha.png" alt=""><span
+              class="link5">‎Serviços</span></a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
   
 
 <br><br>
@@ -150,7 +212,7 @@
 
   <article class="card">
     <figure class="card-image">
-      <img src="img/AAAAA.avif" />
+      <img src="img/AAAAA.png" />
     </figure>
     <div class="card-header">
       <p>Ração Cachorro 7+ Pedigree Carne 100g</p>
@@ -177,7 +239,7 @@
   </article>
   <article class="card" data-product-id="1">
     <figure class="card-image">
-      <img src="img/Magnus.avif" />
+      <img src="img/Magnus.png" />
     </figure>
     <div class="card-header">
       <p>Racao Cachorro Sabor Carne Magnus 20Kg</p>
@@ -204,7 +266,7 @@
   </article>
   <article class="card">
     <figure class="card-image">
-      <img src="img/camalala.avif"/>
+      <img src="img/camalala.png"/>
     </figure>
     <div class="card-header">
       <p>Cama Para Cachorro Pequeno Almofada</p>
@@ -231,7 +293,7 @@
   </article>
   <article class="card" id="ultima">
     <figure class="card-image">
-      <img src="img/osso.avif" />
+      <img src="img/osso.png" />
     </figure>
     <div class="card-header">
       <p>Brinquedo Cachorro Osso Ultra Resistente </p>
@@ -257,6 +319,50 @@
     </div>
   </article>
 </div>
+
+
+
+<br><br>
+
+
+<div class="checkout">
+  <div class="produtos">
+    <h2>Produtos</h2>
+    <!-- Aqui você pode adicionar seus produtos e botões para adicionar/remover -->
+    <div class="produto">
+      <p>Nome do Produto 1</p>
+      <button class="btn-add">Adicionar</button>
+      <button class="btn-remove">Remover</button>
+    </div>
+    <div class="produto">
+      <p>Nome do Produto 2</p>
+      <button class="btn-add">Adicionar</button>
+      <button class="btn-remove">Remover</button>
+    </div>
+    <!-- ... mais produtos podem ser adicionados aqui -->
+  </div>
+  
+  <div class="resumo">
+    <h2>Resumo da Compra</h2>
+  
+    <div class="cupom">
+      <label for="cupom">Cupom:</label>
+      <input type="text" id="cupom" placeholder="Insira o cupom">
+      <button type="button">Aplicar</button>
+    </div>
+    
+    <div class="subtotal">
+      <p>Subtotal: R$ <span id="subtotalAmount">0.00</span></p>
+    </div>
+    
+    <div class="total">
+      <p>Total: R$ <span id="totalAmount">0.00</span></p>
+    </div>
+  
+    <button class="btn-finalizar" type="button">Finalizar Compra</button>
+  </div>
+</div>
+
 
 
 </body>
