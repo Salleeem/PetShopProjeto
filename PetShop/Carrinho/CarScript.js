@@ -1,94 +1,84 @@
-document.addEventListener("DOMContentLoaded", function () {
-    // Funções para manipular a quantidade de produtos
-    function updateQuantity(element, increment) {
-      const qtyElement = element.parentElement.querySelector("span");
-      let qty = parseInt(qtyElement.textContent);
-      qty += increment;
-      if (qty < 1) {
-        qty = 1;
-      }
-      qtyElement.textContent = qty;
-      updateTotal(element);
-      updateCartTotal();
-    }
-  
-    function updateTotal(element) {
-      const qty = parseInt(element.parentElement.querySelector("span").textContent);
-      const price = parseFloat(element.parentElement.parentElement.previousElementSibling.textContent.slice(2));
-      const total = qty * price;
-      element.parentElement.parentElement.nextElementSibling.textContent = `R$ ${total.toFixed(2)}`;
-    }
-  
-    function updateCartTotal() {
-      const totalElements = document.querySelectorAll("tbody td:nth-child(4)");
-      let cartTotal = 0;
-      totalElements.forEach((element) => {
-        cartTotal += parseFloat(element.textContent.slice(2));
-      });
-      document.getElementById("total").textContent = `R$ ${cartTotal.toFixed(2)}`;
-    }
-  
-    // Event listeners para os botões de incremento e decremento
-    const qtyButtons = document.querySelectorAll(".qty button");
-    qtyButtons.forEach((button) => {
-      button.addEventListener("click", function () {
-        if (button.classList.contains("bx-minus")) {
-          updateQuantity(button, -1);
-        } else if (button.classList.contains("bx-plus")) {
-          updateQuantity(button, +1);
-        }
-      });
-    });
-  
-    // Event listeners para os botões de remoção
-    const removeButtons = document.querySelectorAll(".remove");
-    removeButtons.forEach((button) => {
-      button.addEventListener("click", function () {
-        button.parentElement.parentElement.remove();
-        updateCartTotal();
-      });
-    });
-  
-    // Função para finalizar a compra (apenas um alert neste exemplo)
-    window.finalizarCompra = function () {
-      alert("Compra finalizada!");
-    };
+// Encontrar todos os botões "Comprar" nos cards de produto
+const btnComprar = document.querySelectorAll('.comprar-btn');
+
+// Adicionar um ouvinte de evento a cada botão "Comprar"
+btnComprar.forEach(btn => {
+  btn.addEventListener('click', function(event) {
+    event.preventDefault();
+
+    const productName = btn.parentNode.parentNode.querySelector('.card-header p').textContent;
+    const productPrice = btn.parentNode.parentNode.querySelector('.card-header .preco h2').textContent;
+
+    adicionarProdutoAoCheckout(productName, productPrice);
+  });
+});
+
+// Função para adicionar o nome e preço do produto à seção de checkout
+function adicionarProdutoAoCheckout(productName, productPrice) {
+  const checkout = document.querySelector('.checkout .produtos');
+
+  const novoProduto = document.createElement('div');
+  novoProduto.innerHTML = `<p>${productName} - ${productPrice}</p>`;
+  checkout.appendChild(novoProduto);
+}
+
+
+
+
+
+// Função para adicionar o produto à seção de checkout (com botão de remoção)
+function adicionarProdutoAoCheckout(productName, productPrice) {
+  // Lógica para adicionar o produto à seção de checkout com um botão de remoção
+  const checkout = document.querySelector('.checkout .produtos');
+
+  // Cria um novo elemento div para representar o produto adicionado
+  const novoProduto = document.createElement('div');
+  novoProduto.classList.add('produto');
+
+  // Cria parágrafos para exibir o nome e o preço do produto
+  const nomeProduto = document.createElement('p');
+  nomeProduto.textContent = `${productName} - ${productPrice}`;
+
+  // Cria um botão de remoção para este produto
+  const btnRemover = document.createElement('button');
+  btnRemover.textContent = 'Remover';
+  btnRemover.classList.add('btn-remover');
+
+  // Adiciona um ouvinte de evento ao botão de remoção para remover o produto
+  btnRemover.addEventListener('click', function(event) {
+    const produtoParaRemover = event.target.closest('.produto');
+    produtoParaRemover.remove();
+    atualizarTotais();
   });
 
-  // Função para incrementar a quantidade
-function incrementQuantity(index) {
-    cartItems[index].quantity++;
-    initCart(); // Atualizar o carrinho
-  }
-  
-  // Função para decrementar a quantidade
-  function decrementQuantity(index) {
-    if (cartItems[index].quantity > 1) {
-      cartItems[index].quantity--;
-    }
-    initCart(); // Atualizar o carrinho
-  }
-  
-  // ...
-  
-  // No trecho onde os botões de incremento e decremento são criados dinamicamente, você precisa passar o índice da linha correspondente:
-  // ...
-  
-  cartItems.forEach((item, index) => {
-    const row = document.createElement("tr");
-    row.innerHTML = `
-      <!-- ... -->
-  
-      <td>
-        <div class="qty">
-          <button onclick="decrementQuantity(${index})"><i class="bx bx-minus"></i></button>
-          <span>${item.quantity}</span>
-          <button onclick="incrementQuantity(${index})"><i class="bx bx-plus"></i></button>
-        </div>
-      </td>
-  
-      <!-- ... -->
-    `;
-    cartBody.appendChild(row);
-  });
-  
+  // Adiciona os elementos à div do novo produto
+  novoProduto.appendChild(nomeProduto);
+  novoProduto.appendChild(btnRemover);
+
+  // Adiciona o novo produto à seção de checkout
+  checkout.appendChild(novoProduto);
+
+  // Chama a função para atualizar os totais, se necessário
+  atualizarTotais();
+}
+
+// Exemplo de uso:
+// Supondo que você tenha um evento de clique em um botão de adicionar produto
+const botaoAdicionar = document.getElementById('produto1'); // Seleciona o botão de adicionar
+
+botaoAdicionar.addEventListener('click', function(event) {
+  // Obtém os dados do produto (nome e preço)
+  const productName = "Nome do Produto"; // Substitua pelo nome do produto
+  const productPrice = 19.99; // Substitua pelo preço do produto
+
+  // Adiciona o produto ao checkout com o botão de remoção
+  adicionarProdutoAoCheckout(productName, productPrice);
+});
+
+
+
+
+
+
+
+
