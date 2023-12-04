@@ -41,7 +41,7 @@ function adicionarProdutoAoCheckout(productName, productPrice) {
 
   // Cria um botão de remoção para este produto
   const btnRemover = document.createElement('button');
-  btnRemover.textContent = 'Remover';
+  btnRemover.textContent = 'X';
   btnRemover.classList.add('btn-remover');
 
   // Adiciona um ouvinte de evento ao botão de remoção para remover o produto
@@ -82,3 +82,4 @@ botaoAdicionar.addEventListener('click', function(event) {
 
 
 
+  

@@ -822,11 +822,40 @@ ion-icon{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 10px;
+}
+
+.produto p{
+  margin-top: 10px
 }
 
 .resumo {
   width: 45%;
+  ;
 }
 
 /* O restante do CSS permanece o mesmo */
+
+
+.booo{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.btn-remover{
+  background-color: red;
+  border: none;
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-bottom: 15;
+  padding-bottom: 15;
+}
