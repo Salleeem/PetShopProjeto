@@ -114,8 +114,8 @@
   }
   
   .cardImg {
-    width: 31px;
-    height: 31px;
+    width: 75px;
+    height: 75px;
   }
   
   .cardImgContainer {
@@ -180,7 +180,7 @@
     line-height: 20px;
     font-weight: 700;
     color: white;
-    background-color: rgb(244, 152, 146);
+    background-color:#FF9B04;
     box-shadow: rgba(244, 152, 146, 0.25) 0px 10px 20px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -215,8 +215,6 @@
     background-position-x: initial;
     background-position-y: initial;
     background-size: initial;
-    background-repeat-x: initial;
-    background-repeat-y: initial;
     background-attachment: initial;
     background-origin: initial;
     background-clip: initial;
@@ -492,7 +490,7 @@
 
 
 
-
+/* Reponsividadade */
 
   @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&amp;display=swap');
 

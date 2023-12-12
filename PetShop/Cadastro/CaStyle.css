@@ -1,54 +1,63 @@
+/* Importa a fonte 'Poppins' do Google Fonts e define estilos gerais para a página */
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 
+/* Define estilos para resetar margens, preenchimentos e configuração de caixa para todos os elementos.
+   Aplica a fonte 'Poppins' como padrão para o texto na página. */
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
+/* Estilos para o HTML e o corpo da página.
+   Define a exibição em grid para centralizar o conteúdo,
+   define uma imagem de fundo, configura o tamanho e repetição da imagem. */
 html,
 body {
-	display: grid;
-	height: 100%;
-	width: 100%;
-	place-items: center;
-	background-image: url("https://editalconcursosbrasil.com.br/wp-content/uploads/2023/02/gato-preto-vizinha-nome-lucifer-lucy-polemica.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
+    display: grid;
+    height: 100%;
+    width: 100%;
+    place-items: center;
+    background-image: url("https://editalconcursosbrasil.com.br/wp-content/uploads/2023/02/gato-preto-vizinha-nome-lucifer-lucy-polemica.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
+/* Define a cor e opacidade da seleção de texto */
 ::selection {
-	background: #FF5A5F;
-	color: #fff;
-	opacity: 70%;
+    background: #FF5A5F;
+    color: #fff;
+    opacity: 70%;
 }
 
-.wrapper{
-	overflow: hidden;
-	max-width: 390px;
-	background: rgba(255, 255, 255, 0.6);
-	padding: 30px;
-	border-radius: 5px;
-	box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+/* Estilos para a área principal do formulário de login/signup.
+   Define a largura máxima, background semi-transparente, espaçamento interno, bordas e sombra. */
+.wrapper {
+    overflow: hidden;
+    max-width: 390px;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
 }
 
-
-
+/* Estilos para o texto do título no formulário. Define o tamanho, peso da fonte e alinhamento. */
 .wrapper .title-text {
-	display: flex;
-	width: 200%;
-	opacity: unset;
+    display: flex;
+    width: 200%;
+    opacity: unset;
 }
 
 .wrapper .title {
-	width: 50%;
-	font-size: 35px;
-	font-weight: 600;
-	text-align: center;
-	transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1);
+    width: 50%;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1);
 }
 
+/* Restante do código CSS... */
 
 
 .wrapper .slide-controls {
@@ -76,7 +85,7 @@ body {
 	cursor: pointer;
 	z-index: 1;
 	transition: all 0.6s ease;
-	opacity: ;
+	
 }
 
 .slide-controls label.signup {
@@ -207,8 +216,6 @@ form .btn .btn-layer {
 	background: linear-gradient(90deg, rgba(255, 89, 0, 1) 0%, rgba(255, 155, 4, 1) 50%, rgba(255, 200, 117, 1) 100%);
 	border-radius: 5px;
 	transition: all 0.4s ease;
-	opacity: ;
-	;
 }
 
 form .btn:hover .btn-layer {

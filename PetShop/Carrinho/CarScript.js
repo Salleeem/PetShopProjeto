@@ -1,3 +1,4 @@
+
 // Encontrar todos os botões "Comprar" nos cards de produto
 const btnComprar = document.querySelectorAll('.comprar-btn');
 
@@ -21,10 +22,6 @@ function adicionarProdutoAoCheckout(productName, productPrice) {
   novoProduto.innerHTML = `<p>${productName} - ${productPrice}</p>`;
   checkout.appendChild(novoProduto);
 }
-
-
-
-
 
 // Função para adicionar o produto à seção de checkout (com botão de remoção)
 function adicionarProdutoAoCheckout(productName, productPrice) {
@@ -53,7 +50,7 @@ function adicionarProdutoAoCheckout(productName, productPrice) {
 
   // Adiciona os elementos à div do novo produto
   novoProduto.appendChild(nomeProduto);
-  novoProduto.appendChild(btnRemover);
+  
 
   // Adiciona o novo produto à seção de checkout
   checkout.appendChild(novoProduto);
@@ -62,24 +59,69 @@ function adicionarProdutoAoCheckout(productName, productPrice) {
   atualizarTotais();
 }
 
-// Exemplo de uso:
-// Supondo que você tenha um evento de clique em um botão de adicionar produto
-const botaoAdicionar = document.getElementById('produto1'); // Seleciona o botão de adicionar
+function msg() {
+  alert("Compra Finalizada!");
+}
 
-botaoAdicionar.addEventListener('click', function(event) {
-  // Obtém os dados do produto (nome e preço)
-  const productName = "Nome do Produto"; // Substitua pelo nome do produto
-  const productPrice = 19.99; // Substitua pelo preço do produto
+// Array para armazenar os preços dos produtos no carrinho
+const carrinho = [];
 
-  // Adiciona o produto ao checkout com o botão de remoção
-  adicionarProdutoAoCheckout(productName, productPrice);
+// Função para calcular o subtotal
+function calcularSubtotal() {
+  let subtotal = 0;
+  // Itera sobre o carrinho e soma os preços
+  carrinho.forEach(item => {
+    subtotal += parseFloat(item.price); // Converte o preço para número e adiciona ao subtotal
+  });
+  return subtotal.toFixed(2); // Retorna o subtotal formatado com duas casas decimais
+}
+
+// Função para atualizar os totais na página
+function atualizarTotais() {
+  const subtotalElement = document.getElementById('subtotalAmount');
+  const totalElement = document.getElementById('totalAmount');
+
+  const subtotal = calcularSubtotal();
+  subtotalElement.textContent = subtotal; // Atualiza o subtotal na página
+  totalElement.textContent = subtotal; // No exemplo, o total é o mesmo que o subtotal
+}
+
+// Ao adicionar um produto ao carrinho, além de exibi-lo, também o armazenamos no array "carrinho"
+function adicionarProdutoAoCarrinho(productPrice) {
+  // Adiciona o preço do produto ao carrinho
+  carrinho.push({ price: parseFloat(productPrice) });
+
+  // Atualiza os totais após adicionar o produto
+  atualizarTotais();
+
+  // Cria um botão de remoção
+  const btnRemover = document.createElement('button');
+  btnRemover.textContent = 'Remover';
+  btnRemover.classList.add('btn-remover');
+
+  // Adiciona um evento de clique para o botão de remoção
+  btnRemover.addEventListener('click', function() {
+    const index = carrinho.length - 1; // Obtém o índice do item a ser removido (último item adicionado)
+    carrinho.splice(index, 1); // Remove o item do carrinho
+
+    // Remove o botão de remoção e atualiza os totais
+    btnRemover.parentNode.remove();
+    atualizarTotais();
+  });
+
+  // Adiciona o botão de remoção ao item no carrinho
+  const ultimoItemAdicionado = document.querySelector('.checkout .produtos').lastChild;
+  ultimoItemAdicionado.appendChild(btnRemover);
+}
+
+// Exemplo de uso para adicionar um produto ao carrinho
+const botoesAdicionar = document.querySelectorAll('.comprar-btn'); // Botões para adicionar produto
+
+botoesAdicionar.forEach(botao => {
+  botao.addEventListener('click', function(event) {
+    const card = botao.closest('.card'); // Encontra o card pai do botão clicado
+    const productPrice = card.querySelector('.preco h2').textContent.replace('R$', '').trim(); // Obtém o preço do card
+
+    adicionarProdutoAoCarrinho(productPrice);
+  });
 });
-
-
-
-
-
-
-
-
-  

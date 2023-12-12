@@ -1,3 +1,5 @@
+//Parte para a rotação do entre login e cadastro
+
 const loginText = document.querySelector(".title-text .login");
 const loginForm = document.querySelector("form.login");
 const loginBtn = document.querySelector("label.login");

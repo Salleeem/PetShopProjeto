@@ -1,49 +1,58 @@
-.d1{
+.d1 {
   display: flex;
   justify-content: space-around;
 }
-.c1{
+
+.c1 {
   width: 25%;
   background-color: white;
   border-radius: 20px;
 }
-.c2{
+
+.c2 {
   width: 25%;
   background-color: white;
   border-radius: 20px;
 }
-.c3{
+
+.c3 {
   width: 25%;
   background-color: white;
   border-radius: 20px;
 }
-.c4{
+
+.c4 {
   width: 25%;
   background-color: white;
   border-radius: 20px;
 }
-.c5{
+
+.c5 {
   width: 25%;
   background-color: white;
   border-radius: 20px;
 }
-.c6{
+
+.c6 {
   width: 25%;
   background-color: white;
   border-radius: 20px;
 }
-.titu{
+
+.titu {
   margin-right: 9%;
   font-size: 4vh;
   display: flex;
   justify-content: center;
-align-items: center;
+  align-items: center;
 }
-.icon{
+
+.icon {
   margin-left: 2vh;
   width: 10vh;
 }
-.pp{
+
+.pp {
   color: gray;
   width: 70%;
   margin-left: 15%;
@@ -57,56 +66,166 @@ align-items: center;
 
 
 
-.serv{
+
+
+
+
+
+
+
+
+
+.serv {
   display: flex;
   margin-top: 10vh;
   flex-wrap: wrap;
   justify-content: space-around;
-  
+
 }
-.serv2{
+
+.serv2 {
   display: flex;
   margin-top: 10vh;
   flex-wrap: wrap;
   justify-content: space-around;
-  
+
 }
-.central{
+
+.central {
   background-color: gainsboro;
 }
-.s1{
+
+.s1 {
   background-color: gray;
+  background-image: url(https://foxvet.com.br/wp-content/uploads/2022/07/banner-banho-tosa-perguntas-frequentes-1200x675.jpg);
   display: flex;
   justify-content: space-around;
 }
-.t1{
+
+.s2 {
+  background-color: gray;
+  background-image: url(https://universo.uniateneu.edu.br/wp-content/uploads/2022/05/Medico-veterinario.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+}
+
+.s3 {
+  background-color: gray;
+  background-image: url(https://www.forquilhinhanoticias.com.br/wp-content/uploads/2020/03/Feira-de-ado%C3%A7%C3%A3o-imagem-ilustrativa.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+}
+
+.s4 {
+  background-color: gray;
+  background-image: url(https://procao.ind.br/wp-content/uploads/2019/12/adestramento-de-caes-1000x500.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+}
+
+.s5 {
+  background-color: gray;
+  background-image: url(https://www.petz.com.br/blog/wp-content/uploads/2019/07/cuidador-de-cachorro.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+}
+.s6 {
+  background-color: gray;
+  background-image: url(https://f.i.uol.com.br/fotografia/2019/05/24/15587324705ce85eb61329c_1558732470_3x2_lg.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+}
+
+.fil {
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: space-around;
+}
+
+.t1 {
   margin-top: 20vh;
-  background-color: black;
-  opacity: 20%;
-  color: gainsboro;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: rgb(255, 255, 255);
   width: 45%;
   height: 45vh;
   padding: 5vh;
   border-radius: 5vh;
 }
-.ppp{
-  font-size: 4vh;
+
+.t2 {
+  margin-top: 20vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: rgb(255, 255, 255);
+  width: 45%;
+  height: 55vh;
+  padding: 5vh;
+  border-radius: 5vh;
 }
-.ser{
+
+
+.ppp {
+  font-size: 4vh;
+  color: rgb(255, 255, 255);
+}
+
+.ser {
+
+  width: 10vh;
+  margin-left: 10vh;
+  margin-top: 15vh;
   font-size: 10vh;
   color: white;
 }
-.ss1{
+
+.ss1 {
   width: 30%;
   display: flex;
   flex-direction: column;
-justify-content: space-evenly;
+  justify-content: space-evenly;
 }
-.bt1{
-  margin-top: 70vh;
+
+.bt1 {
+  text-decoration: none;
+  margin-left: 10vh;
+  margin-top: 30vh;
+  margin-bottom: 15vh;
   background-color: orange;
   padding: 2vh;
   border-radius: 10vh;
   color: white;
   font-size: 4vh;
+  width: 41vh;
+  text-decoration: none;
+}
+
+.bt2 {
+  text-decoration: none;
+  margin-left: 10vh;
+  margin-top: 55vh;
+  margin-bottom: 15vh;
+  background-color: orange;
+  padding: 2vh;
+  border-radius: 10vh;
+  color: white;
+  font-size: 4vh;
+  width: 41vh;
+  text-decoration: none;
+}
+.bt3 {
+  text-decoration: none;
+  margin-left: 10vh;
+  margin-top: 40vh;
+  margin-bottom: 15vh;
+  background-color: orange;
+  padding: 2vh;
+  border-radius: 10vh;
+  color: white;
+  font-size: 4vh;
+  width: 41vh;
+  text-decoration: none;
 }
