@@ -1,3 +1,245 @@
+@import url(https://fonts.googleapis.com/css?family=Lilita+One&display=swap);
+
+.top-bar .nav-item {
+  display: inline-block;
+}
+
+nav {
+  padding: 0px;
+}
+
+.div-1{
+  width: 100%;
+  display: inline-flex;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.3vh;
+}
+
+.div-logo{
+  margin-left: 150px;
+}
+.div-text{
+  margin-left: 25vh;
+  margin-right: 25vh;
+  display: inline-flex;
+  margin-top: 2vh;
+  
+}
+
+nav.top-bar-wrap {
+  background: #ffdcb4;
+  margin-left: 158px;
+  border-radius: 20px;
+
+}
+
+.top-bar-wrap {
+  height: 40px;
+  line-height: 40px;
+  margin-top: 0px;
+}
+
+.main-nav-wrap {
+  height: 80px;
+  line-height: 80px;
+}
+
+nav.main-nav-wrap {
+  background: white;
+  font-size: 1.25rem
+}
+
+nav.top-bar-wrap ul,
+nav.main-nav-wrap ul {
+  margin-bottom: 0px;
+  margin-top: 0px
+}
+
+a.nav-link:hover {
+  background: white;
+
+  border-left: 12px solid rgba(232, 231, 230);
+}
+
+a.nav-link1:hover {
+  background: white;
+
+  border-left: 12px solid rgba(232, 231, 230);
+}
+
+a.nav-link {
+  border-left: 1px solid transparent;
+  border-right: 10px solid transparent;
+  color: black;
+  font-family: 'Lilita One';
+  transform: skew(-25deg);
+  transition: all 400ms ease-out
+}
+
+
+
+
+
+a.nav-text {
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  color: black;
+  font-family: 'Lilita One';
+  text-decoration: none;
+  margin-top: 4px;
+}
+
+
+
+a .inner-text{
+  font-size: x-large;
+}
+
+
+
+a .link1 {
+  display: inline-block;
+  transform: skew(25deg);
+  font-size: larger;
+}
+
+a .link2 {
+  display: inline-block;
+  transform: skew(25deg);
+  font-size: larger;
+}
+
+a .link3 {
+  display: inline-block;
+  transform: skew(25deg);
+  font-size: larger;
+}
+
+a .link4 {
+  display: inline-block;
+  transform: skew(25deg);
+  font-size: larger;
+}
+
+a .link5 {
+  display: inline-block;
+  transform: skew(25deg);
+  font-size: larger;
+}
+
+a .link6 {
+  display: inline-block;
+  transform: skew(25deg);
+  font-size: larger;
+}
+
+a:hover .link1 {
+  color: blue;
+  display: inline-block;
+  transform: skew(25deg);
+}
+
+a:hover .link2 {
+  color: red;
+  display: inline-block;
+  transform: skew(25deg);
+}
+
+a:hover .link3 {
+  color: palevioletred;
+  display: inline-block;
+  transform: skew(25deg);
+}
+
+a:hover .link4 {
+  color: orange;
+  display: inline-block;
+  transform: skew(25deg);
+}
+
+a:hover .link5 {
+  color: green;
+  display: inline-block;
+  transform: skew(25deg);
+}
+
+a:hover .link6 {
+  color: rgb(158, 158, 255);
+  display: inline-block;
+  transform: skew(25deg);
+}
+
+
+.nav-link {
+  padding: 0px;
+}
+
+
+.top-bar-wrap a {
+  margin-left: 10vh;
+}
+
+.main-nav-wrap a {
+  padding-left: 0px;
+  display: inline-block;
+}
+
+.brand-logo img {
+  height: 100px;
+  transform: skew(-25deg)
+}
+
+.brand-logo {
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  height: 100px;
+  transform: skewX(25deg);
+}
+
+.brand-logo {
+  left: -30px;
+  padding-left: 40px;
+  background: #FFFF;
+}
+
+.nav-link img {
+  height: 27px;
+  width: 27px;
+  transform: skewX(25deg);
+}
+
+
+
+
+.logo {
+  height: 9vh;
+}
+
+.carrinho a img{
+  margin-top: 1vh;
+  height: 7vh;
+  background-color: rgb(236, 236, 236);
+  border-radius: 100vh;
+}
+
+.entrar a img{
+  margin-top: 1vh;
+  height: 7vh;
+  background-color: rgb(236, 236, 236);
+  border-radius: 100vh;
+}
+.buttons{
+  margin-left: vh;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+
+
+
+
 .d1 {
   display: flex;
   justify-content: space-around;
@@ -91,19 +333,16 @@
 
 }
 
-.central {
-  background-color: gainsboro;
-}
 
 .s1 {
-  background-color: gray;
+  
   background-image: url(https://foxvet.com.br/wp-content/uploads/2022/07/banner-banho-tosa-perguntas-frequentes-1200x675.jpg);
   display: flex;
   justify-content: space-around;
 }
 
 .s2 {
-  background-color: gray;
+  
   background-image: url(https://universo.uniateneu.edu.br/wp-content/uploads/2022/05/Medico-veterinario.jpg);
   background-size: cover;
   display: flex;
@@ -111,7 +350,7 @@
 }
 
 .s3 {
-  background-color: gray;
+  
   background-image: url(https://www.forquilhinhanoticias.com.br/wp-content/uploads/2020/03/Feira-de-ado%C3%A7%C3%A3o-imagem-ilustrativa.jpg);
   background-size: cover;
   display: flex;
@@ -119,7 +358,7 @@
 }
 
 .s4 {
-  background-color: gray;
+  
   background-image: url(https://procao.ind.br/wp-content/uploads/2019/12/adestramento-de-caes-1000x500.jpg);
   background-size: cover;
   display: flex;
@@ -127,14 +366,14 @@
 }
 
 .s5 {
-  background-color: gray;
+  
   background-image: url(https://www.petz.com.br/blog/wp-content/uploads/2019/07/cuidador-de-cachorro.jpg);
   background-size: cover;
   display: flex;
   justify-content: space-around;
 }
 .s6 {
-  background-color: gray;
+  
   background-image: url(https://f.i.uol.com.br/fotografia/2019/05/24/15587324705ce85eb61329c_1558732470_3x2_lg.jpg);
   background-size: cover;
   display: flex;
@@ -228,4 +467,11 @@
   font-size: 4vh;
   width: 41vh;
   text-decoration: none;
+}
+.central{
+  background-image: url(img/Sem.png);
+  background-size: cover;
+}
+.serv{
+  margin-top: 20vh;
 }
